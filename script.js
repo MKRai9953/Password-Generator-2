@@ -51,5 +51,10 @@ copyIcon.addEventListener("click", () => {
     navigator.clipboard.writeText(passBox.value);
     copyIcon.innerText = "check";
     copyIcon.title = "PasswordCopied";
+
+    setTimeout(() => {
+      copyIcon.innerText = "content_Copy";
+      copyIcon.title = "";
+    }, 2000);
   }
 });
